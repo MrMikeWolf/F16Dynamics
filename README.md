@@ -24,12 +24,12 @@ There are two scripts which simulate the the equations of motion:
 ## Simulate elevator step
 The script sim_f16.py simulates the dynamics of an F16 to a step change in the elevator. The step change in the elevator is plotted along with the acceleration in the z axis (altitude) and the altitude. The results of the simulation is shown in the image below.
 
-<img align="left" width="2000" height="1000" src="elevator_step.png">
+<img align="left" width="2000" height="600" src="elevator_step.png">
 
 ## Simulate coordinated turn
 The other script coordinate_f16.py simulates a coordinated turn of an F16. The x, y and z axis are plotted in a 3 dimensional graph. The results of the simulation is shown in the image below.
 
-<img align="left" width="1000" height="1000" src="coordinated_F16.png">
+<img align="left" width="1000" height="500" src="coordinated_turn_F16.png">
 
 # TODO:
 * Linearise the model
