@@ -1,7 +1,3 @@
-# exec('eqm/engine_f16.sci')
-# exec('eqm/eqm.sci')
-# exec('eqm/params_f16.sci')
-
 from engine_f16 import tgear
 from eqm import eqm
 from params_f16 import load_f16

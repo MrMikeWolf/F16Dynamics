@@ -1,6 +1,3 @@
-# exec('trim/trim_f16.sci')
-# exec('eqm/params_f16.sci')
-
 from trim_f16 import cost_trim_f16
 from params_f16 import load_f16
 from engine_f16 import tgear
@@ -10,7 +7,6 @@ import pandas as pd
 from scipy.integrate import odeint
 from numpy import arange, sin, cos
 import matplotlib.pyplot as plot
-import matplotlib
 
 params = load_f16()
 params.xcg = .35
@@ -91,27 +87,18 @@ for i in range(0,len(t)):
     mach[i] = outputs.mach
     thrust_pound[i] = outputs.thrust_pound*sin(y[i,4])
 
-font = {'family' : 'Ariel',
-        # 'weight' : 'bold',
-        'size'   : 18}
-
-matplotlib.rc('font', **font)    
-
 ax1=plot.subplot(311)
 ax1.plot(t, [elev_step(ti) for ti in t]);
-# xgrid
 ax1.set_xlabel('Time(s)');
 ax1.set_ylabel('Elevator(deg)')
 
 ax2=plot.subplot(312)
 ax2.plot(t, nzs_g);
-# xgrid
 ax2.set_xlabel('Time(s)')
 ax2.set_ylabel('Nz(g)')
 
 ax3=plot.subplot(313)
 ax3.plot(t, y[:,11])
-# xgrid
 ax3.set_xlabel('Time(s)')
 ax3.set_ylabel('H(ft)')
 

@@ -1,10 +1,3 @@
-# exec('trim/trim_f16.sci')
-# exec('eqm/params_f16.sci')
-
-'''
-Index is complete
-'''
-
 from params_f16 import load_f16
 from trim_f16 import cost_trim_f16
 from engine_f16 import tgear

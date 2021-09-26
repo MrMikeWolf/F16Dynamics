@@ -1,7 +1,3 @@
-# exec('eqm/aerodata_f16.sci')
-# exec('eqm/engine_f16.sci')
-from aerodata_f16 import *
-from engine_f16 import *
 import pandas as pd
 
 def load_f16():

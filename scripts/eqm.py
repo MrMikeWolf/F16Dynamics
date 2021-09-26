@@ -1,8 +1,3 @@
-# exec('atmosphere/atmosphere.sci')
-# exec('atmosphere/atmos_constants.sci')
-# #exec('eqm/engine_f16.sci')
-# #exec('eqm/aerodata_f16.sci')
-
 from atmosphere import atmosphere
 from atmos_constants import atmos
 from engine_f16 import tgear, pdot, thrust

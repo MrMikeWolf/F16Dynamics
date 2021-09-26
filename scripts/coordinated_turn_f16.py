@@ -1,6 +1,3 @@
-# exec('trim/trim_f16.sci');
-# exec('eqm/params_f16.sci');
-#[X0, controls, params] = trim_coordinated_turn(800, 1000, 0.3, -3/180*%pi);
 from params_f16 import load_f16
 from numpy import arange, sin, cos
 import pandas as pd

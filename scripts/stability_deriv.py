@@ -1,4 +1,3 @@
-# exec('eqm/aerodata_f16.sci')
 from aerodata_f16 import *
 from numpy import zeros, pi, sin, cos, array
 
